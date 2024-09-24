@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+    <div class="currency-converter">
+        <h4>Currency Converter Application</h4>
+        <div>
+            <input type="number" class="amount" placeholder="Amount" required />
+            <div class="amountErrorMessage"></div>
+        </div>
+        <div class="drop-list">
+        <div class="from-container">
+            <span>from</span>
+        <div class="select-box">
+            <img src="https://flagcdn.com/16x12/us.png" alt="flag">
+        <select class="from"></select>
+    </div>
+    </div>
+    <div class="icon-container">
+        <i class="fa-solid fa-right-left icon"></i>
+    </div>
+        <div class="to-container">
+            <span>To</span>
+            <div class="select-box">
+                <img src="https://flagcdn.com/16x12/us.png" alt="flag">
+        <select class="to"></select>
+    </div>
+    </div>
+    </div>
+        <button id="convert" onclick="convertCurrency()">Convert</button>
+        <div class="result"></div>
+        </div>
+    <script src="js/index.js"></script>
+    <script src="js/country-list.js"></script>
+</body>
+</html>
