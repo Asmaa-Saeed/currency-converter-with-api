@@ -61,18 +61,22 @@ h4 {
     font-size: 15px;
 }
 
-.select-box .select::-webkit-scrollbar {
+.select-box select::-webkit-scrollbar {
     width: 8px;
 }
 
-.select-box .select::-webkit-scrollbar-track {
+.select-box select::-webkit-scrollbar-track {
     background: #f1f1f1;
 }
 
-.select-box .select::-webkit-scrollbar-thumb {
+.select-box select::-webkit-scrollbar-thumb {
     background: #888;
     border-radius: 10px;
     border-right: 2px solid #f1f1f1;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 .select-box img {
@@ -146,12 +150,60 @@ button:hover {
 }
 
 
-.result {
+.totalConvertedRate {
     text-align: center;
     color:white;
     background-color: #1d264ac5;
     opacity:background-color 0.9;
     padding:10px 20px;
+    height: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 5px;
 }
 
+.footer {
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+    /* margin-bottom: 10px; */
+    /* display: flex;
+    justify-content: space-around;
+    align-items: center; */
+}
+
+.footer p {
+    /* margin: 0; */
+    letter-spacing: 2px;
+    color: #f4f5ff;
+}
+
+.footer p i {
+    color:#f4f5ff;
+}
+
+.footer .social {
+    margin: 0 20px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+.footer .social i {
+    margin-left: 20px;
+}
+
+.linkedin {
+    color: #0077b5;
+}
+
+.twitter {
+    color: #1da1f2;
+}
+
+
+.amountErrorMessage {
+    color: red;
+    font-size: 12px;
+}
