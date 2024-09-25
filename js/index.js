@@ -100,7 +100,6 @@ getButton.addEventListener("click", (e) => {
   e.preventDefault(); // Prevent form submission
   if (isValid()) {
     getExchangeRate();
-    amount.value = "";
   }
 });
 
