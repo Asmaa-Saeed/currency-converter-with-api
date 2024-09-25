@@ -5,6 +5,7 @@ let from = document.querySelector(".from");
 let to = document.querySelector(".to");
 let totalConvertedRate = document.querySelector(".totalConvertedRate"); 
 let flagImg = document.querySelector(".flagImg");
+let exchangeIcon = document.querySelector(".icon-container .icon");
 
 // Define the currencyCodes object with currency codes as keys
 let currencyCodes = {
@@ -82,6 +83,15 @@ function loadFlag(element) {
   }
 }
 
+exchangeIcon.addEventListener("click", () => {
+  let tempCode = from.value;
+  from.value = to.value;
+  to.value = tempCode;
+  getExchangeRate();
+  loadFlag(from);
+  loadFlag(to);
+});
+
 window.addEventListener("load", () => {
   getExchangeRate();
 });
@@ -124,6 +134,6 @@ function getExchangeRate() {
       totalConvertedRate.innerHTML = `${amountVal} ${fromVal} = ${totalExchangeRate} ${to.value}`;
     })
     .catch((error) =>
-      console.error("Error fetching the exchange rate:", error)
+      totalConvertedRate.innerHTML = `Error: ${error}`
     );
 }
