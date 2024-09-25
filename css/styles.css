@@ -163,45 +163,6 @@ button:hover {
     border-radius: 5px;
 }
 
-.footer {
-    color: white;
-    text-align: center;
-    margin-top: 40px;
-    /* margin-bottom: 10px; */
-    /* display: flex;
-    justify-content: space-around;
-    align-items: center; */
-}
-
-.footer p {
-    /* margin: 0; */
-    letter-spacing: 2px;
-    color: #f4f5ff;
-}
-
-.footer p i {
-    color:#f4f5ff;
-}
-
-.footer .social {
-    margin: 0 20px;
-    font-size: 25px;
-    cursor: pointer;
-}
-
-
-.footer .social i {
-    margin-left: 20px;
-}
-
-.linkedin {
-    color: #0077b5;
-}
-
-.twitter {
-    color: #1da1f2;
-}
-
 
 .amountErrorMessage {
     color: red;
